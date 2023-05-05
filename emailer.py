@@ -63,7 +63,7 @@ def sendemail(inputdict):
         print(f"An error occurred: {error}")
 
 
-def main():
+def emailer():
 
     # read the csv into the 2D array emaillist
     emailcsv = r"email-recipients.csv"
@@ -87,6 +87,5 @@ def main():
         # pass dict in to send an email
         sendemail(inputdict)
 
-
 if __name__ == "__main__":
-    main()
+    emailer()
